@@ -1,0 +1,9 @@
+,value
+decisions_compared,169
+period,2006-04 .. 2020-04
+mean_spread_stibor_minus_tbill_bp,40.071597633136086
+mean_forward_diff_pct,0.10116585084881977
+forward_outcome_mean_tb_pct,-0.023755710772405948
+forward_outcome_mean_stibor_pct,0.07738179820140854
+option_outcome_mean_tb_pct,-0.06949672891246114
+option_outcome_mean_stibor_pct,-0.021065879330275924

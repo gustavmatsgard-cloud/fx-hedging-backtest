@@ -1,0 +1,5 @@
+strategy,mean_sek_per_payment,mean_vs_spot_pct,std_vs_spot_pct,p5_vs_spot_pct,worst_vs_spot_pct,best_vs_spot_pct
+unhedged,9965556.5574,0.2918,2.9011,-4.3731,-7.8232,12.3280
+forward,9939715.7221,-0.0021,0.1235,-0.1845,-0.3622,0.2755
+half,9952636.1397,0.1448,1.4529,-2.2140,-4.0660,6.0182
+option,9933129.6330,-0.0523,1.9717,-2.0265,-4.0159,10.5317

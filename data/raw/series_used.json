@@ -1,0 +1,30 @@
+{
+  "eursek": {
+    "seriesId": "SEKEURPMI",
+    "description": "SEKEURPMI | EUR | EUR Euroland, euro | Euroland euro",
+    "observations": 5217,
+    "first": "2006-01-02",
+    "last": "2026-10-09"
+  },
+  "sek_3m": {
+    "seriesId": "SETB3MBENCH",
+    "description": "SETB3MBENCH | SE TB 3 Months | Swedish Treasury Bill maturity 3 months | Swedish Treasury Bill maturity 3 months",
+    "observations": 5199,
+    "first": "2006-01-02",
+    "last": "2026-10-09"
+  },
+  "eur_3m": {
+    "seriesId": "EUDP3MEUR",
+    "description": "EUDP3MEUR | EU 3 Months | Euro market rate EUR, maturity 3 months | Euro market rate EUR, maturity 3 months",
+    "observations": 5216,
+    "first": "2006-01-02",
+    "last": "2026-10-09"
+  },
+  "sek_3m_stibor": {
+    "seriesId": "SEDP3MSTIBORDELAYC",
+    "description": "SEDP3MSTIBORDELAYC | STIBOR 3 Months | STIBOR  maturity 3 months. As of May 2020, the calculation and publishing of STIBOR is conducted by Swedish Financial Benchmark Facility (SFBF). STIBOR rates and more information are available on SFBF’s homepage. | STIBOR  maturity 3 months",
+    "observations": 3640,
+    "first": "2006-01-02",
+    "last": "2020-07-03"
+  }
+}
