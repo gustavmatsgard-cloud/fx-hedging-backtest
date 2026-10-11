@@ -53,7 +53,65 @@ the company actually carried.
 volatility) is known on that date. A unit test checks that shocking future
 prices does not change past volatility estimates.
 
-<!-- RESULTS -->
+## Results
+
+244 monthly hedging decisions, first decision April 2006, last payment
+September 2026. Outcome = effective rate vs the spot rate on the decision
+date, in percent.
+
+| Strategy | Mean | Std. dev. | 5th percentile | Worst | Best |
+|---|---:|---:|---:|---:|---:|
+| Unhedged | +0.29 | 2.90 | −4.37 | −7.82 | +12.33 |
+| Forward (100%) | −0.00 | 0.12 | −0.18 | −0.36 | +0.28 |
+| Forward (50%) | +0.14 | 1.45 | −2.21 | −4.07 | +6.02 |
+| Bought EUR put (ATMF) | −0.05 | 1.97 | −2.03 | −4.02 | +10.53 |
+
+![Distribution of outcomes](figures/distribution.png)
+
+**1. The forward removes almost all of the risk.** The standard deviation of
+the outcome falls from 2.90 to 0.12 percentage points (−96%), and the worst
+quarter goes from −7.8% to −0.4%. The worst unhedged case, a payment fixed in
+March 2009 and received in June 2009, cost about SEK 0.9 million on a single
+EUR 1 million payment.
+
+**2. Not hedging earned slightly more on average – but not reliably.** The
+krona weakened over the period (EUR/SEK from about 9.4 to 11.2), so the
+unhedged exporter received 0.29 percentage points more per payment than with
+the forward, and beat the forward in 57% of the periods. Consecutive outcomes
+overlap by two months, so as a rough correction the effective sample is a
+third of the 244 observations; the t-statistic of the difference is then
+about 0.9, which is not distinguishable from zero. The SEK–EUR rate
+differential averaged roughly zero, so the forward was on average priced
+close to spot – it locks in a rate, it does not predict one.
+
+**3. The option is insurance, and insurance is priced on fear.** The put
+costs 1.28% of spot on average with the realised-volatility input, which is
+why its median outcome sits below zero (−0.68%). Its six worst outcomes all
+come from the first half of 2009, when realised volatility was 16–19% and the
+premium rose to 3.1–3.7% of spot: protection was most expensive right after the crisis had
+started. In exchange it kept most of the upside (best case +10.5%).
+
+**4. A 50% hedge halves the risk and keeps half of the upside.** Because the
+forward leg is almost riskless, the trade-off is close to linear.
+
+![Outcome per payment over time](figures/timeline.png)
+
+![EUR/SEK and forward rates](figures/spot_and_forward.png)
+
+**Robustness: STIBOR instead of the T-bill rate (2006–2020, 169 decisions).**
+STIBOR averaged 40 basis points above the Treasury bill rate, which raises the
+3-month forward by about 0.10% on average. The mean outcome of the forward
+strategy moves from −0.02% to +0.08%, and of the option from −0.07% to
+−0.02%. These shifts are an order of magnitude smaller than the FX dispersion
+(2.9 percentage points), so the conclusions do not change.
+
+**Bottom line.** Over these 20 years the choice was about how much risk the
+company could carry, not about expected return: no strategy had a
+statistically reliable edge, the forward was the cheapest way to remove the
+risk, and the option only makes sense if keeping the upside is worth paying
+around 1.3% (more in turbulent periods, and more in reality than in this
+model, see below).
+
 
 ## Assumptions and limitations
 
